@@ -1,0 +1,62 @@
+:root{
+  --bg:#0b0f14;
+  --card:#0f1820;
+  --muted:#9aa6b2;
+  --accent:#00d1b2;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,Segoe UI,Roboto,system-ui,Arial;
+  background:linear-gradient(180deg,var(--bg),#071017 60%);
+  color:#e6eef3;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:1100px;margin:0 auto;padding:1.2rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.brand{color:var(--accent);font-weight:700;text-decoration:none}
+.nav{display:flex;gap:1rem}
+.nav a{color:var(--muted);text-decoration:none;padding:.35rem .5rem;border-radius:6px}
+.nav a:hover{color:#fff;background:var(--glass)}
+.nav-toggle{display:none;background:transparent;border:0;color:var(--muted);font-size:1.4rem}
+
+.hero{padding:3rem 0}
+.hero-inner{display:flex;gap:2rem;align-items:center}
+.profile-img{width:160px;height:160px;border-radius:12px;object-fit:cover;border:3px solid rgba(255,255,255,0.05);box-shadow:0 6px 20px rgba(0,0,0,0.6)}
+.hero-content h1{margin:0;font-size:2rem}
+.title{color:var(--muted);margin:.25rem 0 1rem}
+.btn{display:inline-block;background:transparent;border:1px solid rgba(255,255,255,0.06);padding:.6rem 1rem;border-radius:8px;color:var(--accent);text-decoration:none}
+
+.about,.projects,.skills,.contact{padding:2rem 0}
+h2{margin-top:0;color:#dff6ef}
+
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.project-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+.project-video{width:100%;margin-top:.5rem;border-radius:8px}
+.tools{color:var(--muted);font-size:.9rem}
+
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;margin-top:1rem}
+.skill-card{background:var(--card);padding:1rem;border-radius:10px;display:flex;flex-direction:column;align-items:center;gap:.5rem;transition:transform .22s ease,box-shadow .22s ease;border:1px solid rgba(255,255,255,0.02)}
+.skill-card img{width:64px;height:64px;object-fit:contain}
+.skill-card span{color:var(--muted);font-size:.95rem}
+.skill-card:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 8px 30px rgba(0,209,178,0.08);filter:drop-shadow(0 6px 30px rgba(0,209,178,0.08))}
+
+.contact-list{list-style:none;padding:0;margin:0;color:var(--muted)}
+
+.site-footer{padding:1.2rem 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:2rem}
+
+/* Responsive */
+@media(max-width:800px){
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .nav{display:none}
+  .nav-toggle{display:block}
+}
+
+/* Reveal animations */
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* Utility */
+.projects-grid .project-card h3{margin:.2rem 0}
