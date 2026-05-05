@@ -50,9 +50,15 @@ User → Route 53 → CloudFront → S3
 
 ## 📂 Project Structure
 portfolio/
+
   index.html
+
   assets/
+  
     css/style.css
+    
     js/script.js
+    
     images/
+    
     videos/
