@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  margin: 0;
+  padding: 30px;
+  color: #222;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h1 {
+  margin-bottom: 4px;
+  color: #1a3c6e;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+form {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #444;
+}
+
+input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  grid-column: span 2;
+  background: #1a3c6e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #142f57;
+}
+
+#statusMsg {
+  font-size: 14px;
+  min-height: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+th {
+  background: #f0f3f7;
+}
+
+.delete-btn {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #962d22;
+}
